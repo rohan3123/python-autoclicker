@@ -14,3 +14,12 @@ numbClicks = 10
 pause_between_clicks = 0.5
 
 print(f"Autoclicker will start in {initialDelay} seconds...")
+time.sleep(initalDelay)
+
+# Perform autoclicks
+for _ in range(numbClicks):
+    # Get the current mouse position
+    x, y = pyautogui.position()
+    
+    
+print("Autoclicker is done")
